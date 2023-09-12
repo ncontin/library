@@ -1,6 +1,54 @@
+/* GENERAL */
+body {
+    background: #0a1b2a;
+    color: #22da6e;
+    font-family: "Courier New", Courier, monospace;
+    width: 100vw;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+}
+
+h2,
+h1 {
+    text-align: center;
+}
+
+#new-book {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .book-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    border: 1px solid #22da6e;
+    border-radius: 0.25rem;
+    margin: 1rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background: #22da6e;
+    color: #0a1b2a;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #1b4937;
+    color: #0a1b2a;
 }
